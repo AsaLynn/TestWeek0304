@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ffb2b2b2"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_topbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_ffffff"
+        android:orientation="vertical">
+
+        <com.test.week0304.widget.PersonItemView
+            android:id="@+id/header_piv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_px160"
+            android:background="@color/c_ffffff"
+            app:content_src="@mipmap/ic_launcher_round"
+            app:showContent="false"
+            app:showContentImg="true"
+            app:title="头像" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_px1"
+            android:layout_marginLeft="@dimen/dp_px20"
+            android:background="@color/c_ffb2b2b2" />
+
+        <com.test.week0304.widget.PersonItemView
+            android:id="@+id/nickname_piv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_px120"
+            android:background="@color/c_ffffff"
+            app:content="小白"
+            app:showContent="true"
+            app:title="昵称" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_px1"
+            android:layout_marginLeft="@dimen/dp_px20"
+            android:background="@color/c_ffb2b2b2" />
+
+
+        <com.test.week0304.widget.PersonItemView
+            android:id="@+id/phone_piv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_px120"
+            android:background="@color/c_ffffff"
+            app:content="18910795207"
+            app:title="手机号" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_px1"
+            android:layout_marginLeft="@dimen/dp_px20"
+            android:background="@color/c_ffb2b2b2" />
+
+        <com.test.week0304.widget.PersonItemView
+            android:id="@+id/name_piv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_px120"
+            android:background="@color/c_ffffff"
+            app:content="张三"
+            app:title="姓名" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_px1"
+            android:layout_marginLeft="@dimen/dp_px20"
+            android:background="@color/c_ffb2b2b2" />
+
+        <com.test.week0304.widget.PersonItemView
+            android:id="@+id/sex_piv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_px120"
+            android:background="@color/c_ffffff"
+            app:content="女"
+            app:title="性别" />
+
+
+    </LinearLayout>
+
+    <com.test.week0304.widget.PersonItemView
+        android:id="@+id/more_piv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_px120"
+        android:layout_marginTop="@dimen/dp_px40"
+        android:background="@color/c_ffffff"
+        app:showContent="false"
+        app:title="更多资料" />
+
+    <TextView
+        android:background="@color/c_ffffff"
+        android:layout_marginTop="@dimen/dp_px80"
+        android:id="@+id/out_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_px100"
+        android:gravity="center"
+        android:text="退出登录" />
+</LinearLayout>
+
+
+    <!--
+    <include
+            layout="@layout/activity_about_title"
+            android:focusable="true" />
+
+    -->
